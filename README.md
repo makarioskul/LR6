@@ -24,3 +24,35 @@
 9. Последнее изменение отменено командой git revert.
    История коммитов сохранена.
 10. Создана отдельная ветка report для оформления отчёта.
+
+## Скриншоты выполнения
+
+### Настройка Git
+![Настройка Git](screenshots/01-git-settings.jpg)
+
+### Клонирование репозитория
+![Клонирование](screenshots/02-clone.jpg)
+
+### Получение изменений с GitHub
+![Git pull](screenshots/03-pull.jpg)
+
+### История веток и последние изменения
+![История](screenshots/04-history.jpg)
+
+### Конфликт при слиянии
+![Конфликт](screenshots/05-merge-conflict.jpg)
+
+### Разрешение конфликта
+![Слияние завершено](screenshots/06-merge-resolved.jpg)
+
+### Удаление побочной ветки
+![Удаление ветки](screenshots/07-delete-branch.jpg)
+
+### Создание коммитов
+![Коммиты](screenshots/08-commits.jpg)
+
+### Откат последнего изменения
+![Откат](screenshots/09-revert.jpg)
+
+### Создание ветки отчёта
+![Ветка report](screenshots/10-report-branch.jpg)
