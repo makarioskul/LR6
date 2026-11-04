@@ -56,3 +56,56 @@
 
 ### Создание ветки отчёта
 ![Ветка report](screenshots/10-report-branch.jpg)
+
+## Лог команд
+
+```bash
+git --version
+git config --global user.name "4516 Кулик М.Е."
+git config --global user.email "makarioskulik@gmail.com"
+git config --global --get user.name
+git config --global --get user.email
+cd ~/Documents
+git clone https://github.com/makarioskul/LR6.git
+cd LR6
+git remote -v
+git branch -a
+git pull origin master
+cat github-note.txt
+git --no-pager log master --oneline --graph --decorate
+git --no-pager log origin/branch1 --oneline --graph --decorate
+git --no-pager show master
+git branch branch1 origin/branch1
+git merge branch1
+git status
+cat mergefile.txt
+nano mergefile.txt
+cat mergefile.txt
+git add mergefile.txt
+git commit -m "Объединены master и branch1, конфликт разрешён"
+git status
+git branch -d branch1
+git branch
+echo "Первое локальное изменение." >> github-note.txt
+git add github-note.txt
+git commit -m "Добавлено первое локальное изменение"
+echo "Второе локальное изменение." >> github-note.txt
+git add github-note.txt
+git commit -m "Добавлено второе локальное изменение"
+cat github-note.txt
+git --no-pager log -3 --oneline
+git revert --no-edit HEAD
+cat github-note.txt
+git --no-pager log -4 --oneline
+git switch -c report
+git branch
+mkdir -p screenshots
+open .
+nano README.md
+git add README.md screenshots
+git commit -m "Начато оформление отчёта, добавлены скриншоты"
+ls screenshots
+nano README.md
+git add README.md
+git commit -m "Добавлены скриншоты этапов работы в отчёт"
+```
